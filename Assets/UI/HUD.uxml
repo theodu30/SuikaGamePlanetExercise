@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label text="Score: 0" name="ScoreLabel" style="position: absolute; top: 50px; left: 50px; font-size: 50px; -unity-font-style: bold;"/>
+    <ui:VisualElement name="NextFruit" style="flex-grow: 1; position: absolute; top: 50px; right: 50px; aspect-ratio: 1; width: 200px;">
+        <ui:Label text="NEXT" style="-unity-text-align: upper-center; font-size: 50px; -unity-font-style: bold;"/>
+        <ui:VisualElement name="NextFruitObject" style="flex-grow: 1; background-image: url(&quot;project://database/Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png?fileID=-2413806693520163455&amp;guid=a86470a33a6bf42c4b3595704624658b&amp;type=3#Circle&quot;); -unity-background-scale-mode: scale-to-fit;"/>
+    </ui:VisualElement>
+    <ui:Label text="YOU LOSE !" name="LostLabel" style="position: absolute; top: 50%; bottom: 50%; align-items: center; align-self: center; -unity-text-align: middle-center; font-size: 100px; -unity-font-style: bold; display: flex;">
+        <ui:Label text="Press R Key to restart&#10;Press escape to quit" style="-unity-text-align: upper-center; top: 50px; font-size: 50px;"/>
+    </ui:Label>
+    <ui:Label text="Left/Right&#10;or Q/D to turn&#10;around planet&#10;&#10;Space to lauch&#10;fruit into planet" name="Controls" style="position: absolute; top: 50%; left: 50px; bottom: 50%; -unity-text-align: middle-left; font-size: 40px;"/>
+</ui:UXML>
