@@ -105,6 +105,16 @@ public class Fruit : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        HandleCollision(collision);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        HandleCollision(collision);
+    }
+
+    private void HandleCollision(Collision2D collision)
+    {
         if (released && collision.transform.TryGetComponent(out Fruit other))
         {
             if (other.Type == Type)
